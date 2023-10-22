@@ -23,14 +23,14 @@
 # у пилотов неодинаковое количество миссий (и миссии могут быть разной длины). у каждой миссии - произвольная модель дрона
 
 # РЕЗУЛЬТАТ:
-# Пилоты в порядке возрастания количества миссий: {'pilot1': 1, 'pilot4': 2, 'pilot9': 3, 'pilot5': 3, 'pilot7': 4, 'pilot6': 5, 'pilot2': 5, 'pilot3': 6, 'pilot8': 6}
+# Пилоты в порядке убывания количества миссий: {'pilot1': 1, 'pilot4': 2, 'pilot9': 3, 'pilot5': 3, 'pilot7': 4, 'pilot6': 5, 'pilot2': 5, 'pilot3': 6, 'pilot8': 6}
 
 # ВАШ КОД:
 ...
 
 # подсказка: готовый код нужной вам сортировки есть здесь (Sample Solution-1:): https://www.w3resource.com/python-exercises/dictionary/python-data-type-dictionary-exercise-1.php
 # подумайте, что нужно в нем изменить для правильной сортировки
-print(f"Пилоты в порядке возрастания количества миссий: {dict(sorted(pilot_mission_dict.items(), key=lambda item: item[1], reverse=True))}")
+print(f"Пилоты в порядке убывания количества миссий: {dict(sorted(pilot_mission_dict.items(), key=lambda item: item[1], reverse=True))}")
 
 # TODO 2-2) Получите и выведите список всех моделей дронов, которые были в файле pilot_path.json
 # Подсказка: внутри print используйте str.join(), чтобы соединить элементы списка (множества)
